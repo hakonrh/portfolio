@@ -1,0 +1,23 @@
+.footer {
+    background-color: var(--dark-gray-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5em 0.5em 0 0;
+    justify-content: space-between;
+    padding: 1em 0 1em 0;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-right: 3em;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}

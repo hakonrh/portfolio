@@ -1,0 +1,37 @@
+nav {
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: var(--dark-gray-dark);
+    padding: 1em;
+    margin: 0;
+}
+
+.nav-left {
+    font-size: 1.4em;
+    font-weight: bold;
+    flex: 1;
+}
+
+.nav-right {
+    font-size: 1.2em;
+    display: flex;
+}
+
+.nav-item {
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    color: var(--light-gray-light);
+}
+
+.nav-item:hover {
+    background-color: var(--dark-gray-medium);
+    text-decoration: underline;
+    transition: background-color 0.15s ease-in-out;
+}
