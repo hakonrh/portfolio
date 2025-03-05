@@ -14,3 +14,20 @@
     max-width: 40%;
     border-radius: 5em;
 }
+
+@media screen and (max-width: 750px) {
+    .home {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .home p {
+        font-size: 1.3em;
+        max-width: 75%;
+    }
+
+    .home img {
+        max-width: 50%;
+        border-radius: 100%;
+    }
+}

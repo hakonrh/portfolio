@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div className="home" id="home">
                 <p>
-                    Jeg er en full-stack webutvikler fra Stavanger, og studerer Webutvikling på NTNU Gjøvik.<br />
+                    Jeg er Håkon, en full-stack webutvikler fra Stavanger som studerer Webutvikling på NTNU Gjøvik.<br />
                     Interessen min for koding startet da jeg var 15, da jeg begynte å utvikle Pokémon fanspill med RPGMaker XP.<br /><br />
                     Jeg er opptatt av å lage enkel, lesbar kode for å løse problemer på en god måte.
                 </p>

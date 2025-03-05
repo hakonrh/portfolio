@@ -1,12 +1,15 @@
-import React from "react";
-import './Navbar.css'
+import React, { useState } from "react";
+import "./Navbar.css";
 import { useLocation, useNavigate } from "react-router";
+import { slide as Menu } from "react-burger-menu";
 
 const Nav = () => {
     const location = useLocation();
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const scrollToSection = (id) => {
+        setMenuOpen(false);
         if (location.pathname === "/") {
             document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
         } else {
@@ -18,20 +21,19 @@ const Nav = () => {
     };
 
     return (
-        <nav>
-            <ul>
-                <div className="nav-left">
-                    <li><button className="nav-item" onClick={() => scrollToSection("home")}>Håkon</button></li>
-                </div>
-                <div className="nav-right">
-                    <li><button className="nav-item" onClick={() => scrollToSection("home")}>Hjem</button></li>
-                    <li><button className="nav-item" onClick={() => scrollToSection("projects")}>Prosjekter</button></li>
-                    <li><button className="nav-item" onClick={() => scrollToSection("about")}>Om meg</button></li>
-                    <li><button className="nav-item" onClick={() => scrollToSection("contact")}>Kontakt</button></li>
-                </div>
-            </ul>
-        </nav>
-    )
+        <div id="burger-menu-wrapper">
+            <Menu 
+                right 
+                isOpen={menuOpen} 
+                onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
+            >
+                <button className="menu-item" onClick={() => scrollToSection("home")}>Hjem</button>
+                <button className="menu-item" onClick={() => scrollToSection("projects")}>Prosjekter</button>
+                <button className="menu-item" onClick={() => scrollToSection("about")}>Om meg</button>
+                <button className="menu-item" onClick={() => scrollToSection("contact")}>Kontakt</button>
+            </Menu>
+        </div>
+    );
 };
 
 export default Nav;

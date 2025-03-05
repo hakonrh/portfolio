@@ -31,3 +31,9 @@
 .project-description {
     margin-top: 0.5em;
 }
+
+@media screen and (max-width: 750px) {
+    .project-container {
+        max-width: 85%;
+    }
+}

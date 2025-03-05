@@ -64,3 +64,20 @@ button {
   background: rgb(45,98,158);
   background: linear-gradient(180deg, rgba(45,98,158,0.6) 0%, rgba(45,98,158,0.6) 40%, rgba(50, 50, 50,0.6) 40%, rgba(50, 50, 50,0.6) 42%, rgba(84,144,224,0.6) 42%, rgba(84,144,224,0.6) 74%, rgba(50, 50, 50,0.6) 74%, rgba(50, 50, 50,0.6) 76%, rgba(150,190,255,0.6) 76%, rgba(150,190,255,0.6) 100%);
 }
+
+.link-style {
+  padding: 20px;
+  text-align: center;
+  color: var(--light-gray-light);
+}
+
+.link-style:hover {
+  background-color: var(--dark-gray-medium);
+  text-decoration: underline;
+  transition: background-color 0.15s ease-in-out;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+@media screen and (max-width: 750px) {
+
+}
