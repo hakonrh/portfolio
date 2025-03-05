@@ -3,7 +3,7 @@ import './AboutMe.css';
 
 const AboutMe = () => {
     return (
-        <div className="about-me">
+        <div className="about-me" id="about">
             <h2>Om meg</h2>
             <p>
                 Jeg er en 25 år gammel fullstack utvikler og designer. Jeg har studert Webutvikling ved NTNU Gjøvik de siste 3 årene, og fullfører graden nå til våren.<br/><br/>

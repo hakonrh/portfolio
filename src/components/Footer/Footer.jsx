@@ -5,7 +5,7 @@ import github from "../../images/logos/github.png";
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer" id="contact">
             <p>Denne nettsiden er laget av Håkon Riis Haugen</p>
             <div className="contact-container">
                 <div>Kontakt meg:

@@ -1,11 +1,11 @@
 :root {
-  --dark-gray-dark: rgb(20,20,20);
-  --dark-gray-medium: rgb(50,50,50);
+  --dark-gray-dark: rgb(20, 20, 20);
+  --dark-gray-medium: rgb(50, 50, 50);
 
-  --light-gray-medium: rgb(180,180,180);
-  --light-gray-light: rgb(230,230,230);
+  --light-gray-medium: rgb(180, 180, 180);
+  --light-gray-light: rgb(230, 230, 230);
 
-  --light-blue-light: rgb(150,190,255);
+  --light-blue-light: rgb(150, 190, 255);
 }
 
 body {
@@ -16,7 +16,9 @@ body {
   padding: 0;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -32,7 +34,8 @@ h3 {
   font-size: 1.5em;
 }
 
-p {
+p,
+.project-text {
   background-color: var(--dark-gray-dark);
   max-width: 80%;
   height: 100%;
@@ -47,4 +50,17 @@ a {
 a:hover {
   color: var(--light-blue-light);
   transition: color 0.1s ease-in-out;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.gradient{
+  display: block;
+  height: 2em;
+  background: rgb(45,98,158);
+  background: linear-gradient(180deg, rgba(45,98,158,0.6) 0%, rgba(45,98,158,0.6) 40%, rgba(50, 50, 50,0.6) 40%, rgba(50, 50, 50,0.6) 42%, rgba(84,144,224,0.6) 42%, rgba(84,144,224,0.6) 74%, rgba(50, 50, 50,0.6) 74%, rgba(50, 50, 50,0.6) 76%, rgba(150,190,255,0.6) 76%, rgba(150,190,255,0.6) 100%);
 }
