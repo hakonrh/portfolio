@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.5135cab4.css",
-    "main.js": "/repository-name/static/js/main.7e218af9.js",
-    "static/js/453.8ab44547.chunk.js": "/repository-name/static/js/453.8ab44547.chunk.js",
-    "static/media/Kq70rdc.jpeg": "/repository-name/static/media/Kq70rdc.8f173ce464c4472915ab.jpeg",
-    "static/media/replace-card.png": "/repository-name/static/media/replace-card.14443c0cde53f95d7348.png",
-    "static/media/game-main.png": "/repository-name/static/media/game-main.6b5fcce023ca3b049e53.png",
-    "static/media/explore-schemas.png": "/repository-name/static/media/explore-schemas.01ba2a3f1c92ff387bdb.png",
-    "static/media/missioncard-select.png": "/repository-name/static/media/missioncard-select.04ee1e500cf2bc2840d4.png",
-    "static/media/fullstack-cover.png": "/repository-name/static/media/fullstack-cover.ef74d354dda89977fc8d.png",
-    "static/media/my-schemas.png": "/repository-name/static/media/my-schemas.e05316a5dd6c637ab8d0.png",
-    "static/media/gamemode-select.png": "/repository-name/static/media/gamemode-select.16300628d3d73a6066a5.png",
-    "static/media/ruby.png": "/repository-name/static/media/ruby.0eed97c5e49b72715df1.png",
-    "static/media/postman.png": "/repository-name/static/media/postman.38561eed536732f94214.png",
-    "static/media/sql.png": "/repository-name/static/media/sql.fb960183c7521cdef180.png",
-    "static/media/react.png": "/repository-name/static/media/react.e7ed830c58efcbc8712b.png",
-    "static/media/vscode.png": "/repository-name/static/media/vscode.bae8c01722d0712d8b4d.png",
-    "index.html": "/repository-name/index.html",
-    "main.5135cab4.css.map": "/repository-name/static/css/main.5135cab4.css.map",
-    "main.7e218af9.js.map": "/repository-name/static/js/main.7e218af9.js.map",
-    "453.8ab44547.chunk.js.map": "/repository-name/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.5135cab4.css",
+    "main.js": "/portfolio/static/js/main.a9b45e7e.js",
+    "static/js/453.8ab44547.chunk.js": "/portfolio/static/js/453.8ab44547.chunk.js",
+    "static/media/Kq70rdc.jpeg": "/portfolio/static/media/Kq70rdc.8f173ce464c4472915ab.jpeg",
+    "static/media/replace-card.png": "/portfolio/static/media/replace-card.14443c0cde53f95d7348.png",
+    "static/media/game-main.png": "/portfolio/static/media/game-main.6b5fcce023ca3b049e53.png",
+    "static/media/explore-schemas.png": "/portfolio/static/media/explore-schemas.01ba2a3f1c92ff387bdb.png",
+    "static/media/missioncard-select.png": "/portfolio/static/media/missioncard-select.04ee1e500cf2bc2840d4.png",
+    "static/media/fullstack-cover.png": "/portfolio/static/media/fullstack-cover.ef74d354dda89977fc8d.png",
+    "static/media/my-schemas.png": "/portfolio/static/media/my-schemas.e05316a5dd6c637ab8d0.png",
+    "static/media/gamemode-select.png": "/portfolio/static/media/gamemode-select.16300628d3d73a6066a5.png",
+    "static/media/ruby.png": "/portfolio/static/media/ruby.0eed97c5e49b72715df1.png",
+    "static/media/postman.png": "/portfolio/static/media/postman.38561eed536732f94214.png",
+    "static/media/sql.png": "/portfolio/static/media/sql.fb960183c7521cdef180.png",
+    "static/media/react.png": "/portfolio/static/media/react.e7ed830c58efcbc8712b.png",
+    "static/media/vscode.png": "/portfolio/static/media/vscode.bae8c01722d0712d8b4d.png",
+    "index.html": "/portfolio/index.html",
+    "main.5135cab4.css.map": "/portfolio/static/css/main.5135cab4.css.map",
+    "main.a9b45e7e.js.map": "/portfolio/static/js/main.a9b45e7e.js.map",
+    "453.8ab44547.chunk.js.map": "/portfolio/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5135cab4.css",
-    "static/js/main.7e218af9.js"
+    "static/js/main.a9b45e7e.js"
   ]
 }
