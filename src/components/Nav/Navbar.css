@@ -1,11 +1,44 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/react-burger-menu/3.0.0/react-burger-menu.min.css');
 
-#burger-menu-wrapper {
+.navbar {
     position: fixed;
     width: 100%;
     top: 0;
-    right: 0;
-    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--dark-gray-dark);
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    color: var(--light-gray-light);
+    cursor: pointer;
+    line-height: 2;
+    padding: 0.5em 1.2em;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.nav-links li:hover {
+    background-color: var(--dark-gray-medium);
+    color: var(--light-blue-light);
+    text-decoration: underline;
+}
+
+.nav-links li:nth-child(4) {
+    margin-right: 3em;
+}
+
+/* Burger menu styles */
+#burger-menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .bm-burger-button {
@@ -44,4 +77,11 @@
     text-decoration: underline;
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     border-radius: 0.5em;
+}
+
+/* Hide nav links on mobile */
+@media (max-width: 750px) {
+    .nav-links {
+        display: none;
+    }
 }

@@ -5,10 +5,14 @@ import cover from "../../images/projects/fullstack-cover.png"
 import exploreSchemas from "../../images/projects/SuperAssessor/explore-schemas.png"
 import gameMain from "../../images/projects/SuperAssessor/game-main.png"
 import gamemode from "../../images/projects/SuperAssessor/gamemode-select.png"
-import missioncards from "../../images/projects/SuperAssessor/missioncard-select.png"
+import missioncardSelect from "../../images/projects/SuperAssessor/missioncard-select.png"
 import mySchemas from "../../images/projects/SuperAssessor/my-schemas.png"
 import replaceCard from "../../images/projects/SuperAssessor/replace-card.png"
 
+import missioncards from "../../images/projects/SuperAssessor/missioncards.png"
+import assessmentcards from "../../images/projects/SuperAssessor/assessmentcards.png"
+
+import { Link } from "react-router";
 
 const SuperAssessor = () => {
     return (
@@ -24,6 +28,7 @@ const SuperAssessor = () => {
 
             <section className="project-text">
                 <h2>Nøkkelfunksjoner</h2>
+                <img src={missioncards} alt="example of the game board provided in exam text" />
                 <ul>
                     <li>Spillbart Super Assessor spill alene eller i gruppe</li>
                     <li>Etter fullført spill kan skjema lagres og deles med andre på nettsiden</li>
@@ -35,6 +40,7 @@ const SuperAssessor = () => {
 
             <section className="project-text">
                 <h2>Mine bidrag:</h2>
+                <img src={assessmentcards} alt="example of the game board provided in exam text" /><br />
                 <ul>
                     <li>Jeg satte opp trygg innlogging for brukere med json web tokens i backend.</li>
                     <li>Jeg lagde funksjoner for å selecte kort, erstatte et kort med et annet tilfeldig et, og erstatte kort med et annet utvalg av kort.</li>
@@ -54,7 +60,7 @@ const SuperAssessor = () => {
                         <span>Før du starter spillet, velger du om du vil spille alene eller i gruppe.</span>
                     </span>
                     <span className="gallery-image">
-                        <img src={missioncards} alt="select up to three mission cards before starting the game" />
+                        <img src={missioncardSelect} alt="select up to three mission cards before starting the game" />
                         <span>Du velger opp til 3 oppdragskort som du skal prøve å oppfylle med vurderingsskjemaet ditt.</span>
                     </span>
                     <span className="gallery-image">
@@ -79,6 +85,11 @@ const SuperAssessor = () => {
                 </div>
             </section>
 
+            <div className="project-navigation">
+                <Link to="/Fellesmodellen" className="link-style project-link">&#9664; Fellesmodellen elæringsnettside</Link>
+                <span>Se annet prosjekt</span>
+                <Link to="/TEA" className="link-style project-link">TEA - The Everything App &#9654;</Link>
+            </div>
         </div>
     )
 };

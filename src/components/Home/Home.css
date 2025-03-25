@@ -8,6 +8,7 @@
 .home p {
     font-size: 1.7em;
     max-width: 40%;
+    line-height: 1.4;
 }
 
 .homeImg {
@@ -20,7 +21,7 @@
         justify-content: center;
         flex-direction: column;
     }
-    
+
     .home p {
         font-size: 1.3em;
         max-width: 75%;
