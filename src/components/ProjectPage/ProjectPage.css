@@ -6,13 +6,23 @@
 }
 
 .project-text {
+    display: flex;
+    align-items: center;
     margin-bottom: 2em;
+    gap: 1em;
+}
+
+.project-text p {
+    width: 50%;
 }
 
 .project-text img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+    max-width: 50%;
+    height: 100%;
+}
+
+.project-text h2 {
+    margin-left: 1em;
 }
 
 h1 {
@@ -20,12 +30,14 @@ h1 {
 }
 
 .gallery-container {
-    width: 80%;
-
-    background-color: var(--dark-gray-dark);
-    border-radius: 0.5em;
+    background-color: var(--special-bg);
+    border-radius: 4em;
 
     padding: 1em;
+}
+
+.gallery-container h2 {
+    text-align: center;
 }
 
 .gallery {
@@ -42,7 +54,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
     max-width: 50%;
     border-radius: 0.5em;
@@ -55,22 +66,22 @@ h1 {
 
 .gallery-image span {
     max-width: 75%;
+    margin-top: 0.5em;
 }
 
 .project-navigation {
-    background-color: var(--dark-gray-dark);
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin-top: 2em;
-    border-radius: 1em;
+    border-radius: 3em;
     padding: 0.4em 0.8em;
     text-align: center;
     align-items: center;
 }
 
-.project-link:hover {
-    border-radius: 0.5em;
+.project-link {
+    border-radius: 2em;
 }
 
 @media screen and (max-width: 750px) {
@@ -88,5 +99,22 @@ h1 {
 
     .gallery-image span {
         max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .project-text {
+        flex-direction: column;
+        margin-bottom: 2em;
+        gap: 0;
+    }
+    
+    .project-text p {
+        width: 100%;
+    }
+    
+    .project-text img {
+        max-width: 100%;
+        height: 100%;
     }
 }

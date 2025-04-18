@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer" id="contact">
             <p>Denne nettsiden er laget av Håkon Riis Haugen</p>
             <div className="contact-container">
-                <div>Kontakt meg:
+                <div>
                     <div className="contact-links">
                         <div className="tech-image">
                             <a href="mailto:hukonriisu@gmail.com" className="tech-link"><img className="tech-logo" src={email} alt="my email" /></a>

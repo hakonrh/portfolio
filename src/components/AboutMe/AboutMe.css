@@ -7,4 +7,5 @@
 .about-me p {
     line-height: 1.6;
     font-size: 1.25em;
+    max-width: 60%;
 }

@@ -14,41 +14,107 @@ import assessmentcards from "../../images/projects/SuperAssessor/assessmentcards
 
 import { Link } from "react-router";
 
+import css from "../../images/logos/css.png";
+import express from "../../images/logos/expressjs.png";
+import html from "../../images/logos/html.png";
+import js from "../../images/logos/js.png";
+import mongodb from "../../images/logos/mongodb.png";
+import node from "../../images/logos/nodejs.png";
+import reactimg from "../../images/logos/react.png";
+
 const SuperAssessor = () => {
     return (
         <div className="project-page">
             <h1>Super Assessor</h1>
             <section className="project-text">
-                <img src={cover} alt="example of the game board provided in exam text" /><br />
-                Dette prosjektet ble lagd som en del av eksamen i faget Full-Stack webutvikling i Vår 2024. Vi var en gruppe på 3 stykker.
-                Oppgaven vår var å lage en digital versjon av Super Assessor spillet, med diverse nye funksjoner.
-                Den opprinnelige fysiske versjonen av spillet er et kortspill hvor undervisere samler kort og bruker dem til å lage nye vurderingsmetoder.
-                Alle på gruppen jobbet på forskjellige deler av prosjektet og gjorde arbeid på frontend, backend, og databasen. Vi jobbet også alle sammen på figma prototypene vi lagde.
+                <p>
+                    Dette prosjektet ble lagd som en del av eksamen i faget Full-Stack webutvikling i Vår 2024. Vi var en gruppe på 3 stykker.
+                    Oppgaven vår var å lage en digital versjon av Super Assessor spillet, med diverse nye funksjoner.
+                    Den opprinnelige fysiske versjonen av spillet er et kortspill hvor undervisere samler kort og bruker dem til å lage nye vurderingsmetoder.
+                    Alle på gruppen jobbet på forskjellige deler av prosjektet og gjorde arbeid på frontend, backend, og databasen. Vi jobbet også alle sammen på figma prototypene vi lagde.
+                </p>
+                <img src={cover} alt="example of the game board provided in exam text" />
+
             </section>
+            <div className="tech-section">
+                <h2>
+                    Lagd med:
+                </h2>
+                <div className="tech-list">
+                    <div className="tech-image">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={html} alt="html" /></a>
+                        <span>
+                            HTML
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={css} alt="css" /></a>
+                        <span>
+                            CSS
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={js} alt="javascript" /></a>
+                        <span>
+                            Javascript
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://react.dev/" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={reactimg} alt="react" /></a>
+                        <span>
+                            React
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://nodejs.org/en" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={node} alt="node js" /></a>
+                        <span>
+                            Node.js
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://expressjs.com/" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={express} alt="express js" /></a>
+                        <span>
+                            Express.js
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={mongodb} alt="mongodb" /></a>
+                        <span>
+                            MongoDB
+                        </span>
+                    </div>
+                </div>
+                <br />
+            </div>
+
 
             <section className="project-text">
-                <h2>Nøkkelfunksjoner</h2>
                 <img src={missioncards} alt="example of the game board provided in exam text" />
-                <ul>
-                    <li>Spillbart Super Assessor spill alene eller i gruppe</li>
-                    <li>Etter fullført spill kan skjema lagres og deles med andre på nettsiden</li>
-                    <li>Brukere kan vurdere og bookmarke andres skjema</li>
-                    <li>Trygt loginsystem med roller og protected routes</li>
-                    <li>Admin dashboard hvor du kan gjøre CRUD funksjoner på kortene</li>
-                </ul>
+                <div>
+                    <h2>Nøkkelfunksjoner</h2>
+                    <ul>
+                        <li>Spillbart Super Assessor spill alene eller i gruppe</li>
+                        <li>Etter fullført spill kan skjema lagres og deles med andre på nettsiden</li>
+                        <li>Brukere kan vurdere og bookmarke andres skjema</li>
+                        <li>Trygt loginsystem med roller og protected routes</li>
+                        <li>Admin dashboard hvor du kan gjøre CRUD funksjoner på kortene</li>
+                    </ul>
+                </div>
             </section>
 
             <section className="project-text">
-                <h2>Mine bidrag:</h2>
-                <img src={assessmentcards} alt="example of the game board provided in exam text" /><br />
-                <ul>
-                    <li>Jeg satte opp trygg innlogging for brukere med json web tokens i backend.</li>
-                    <li>Jeg lagde funksjoner for å selecte kort, erstatte et kort med et annet tilfeldig et, og erstatte kort med et annet utvalg av kort.</li>
-                    <li>Jeg satte opp backend dokumentasjon med SWAGGER.</li>
-                    <li>Jeg lagde funksjon for å bookmarke et assessment scheme i backend, og lagde en knapp for å få det til å funke i frontend (noen andre fikk det til å se fint ut)</li>
-                    <li>Jeg satte opp Protected Routes i frontend</li>
-                    <li>Jeg lagde en turncounter komponent for lagversjonen av spillet, som viser hvem sin tur det er og hvor mange runder dere har spilt</li>
-                </ul>
+                <div>
+                    <h2>Mine bidrag:</h2>
+                    <ul>
+                        <li>Jeg satte opp trygg innlogging for brukere med json web tokens i backend.</li>
+                        <li>Jeg lagde funksjoner for å selecte kort, erstatte et kort med et annet tilfeldig et, og erstatte kort med et annet utvalg av kort.</li>
+                        <li>Jeg satte opp backend dokumentasjon med SWAGGER.</li>
+                        <li>Jeg lagde funksjon for å bookmarke et assessment scheme i backend, og lagde en knapp for å få det til å funke i frontend (noen andre fikk det til å se fint ut)</li>
+                        <li>Jeg satte opp Protected Routes i frontend</li>
+                        <li>Jeg lagde en turncounter komponent for lagversjonen av spillet, som viser hvem sin tur det er og hvor mange runder dere har spilt</li>
+                    </ul>
+                </div>
+                <img src={assessmentcards} alt="example of the game board provided in exam text" />
             </section>
 
             <section className="gallery-container">
@@ -87,7 +153,6 @@ const SuperAssessor = () => {
 
             <div className="project-navigation">
                 <Link to="/Fellesmodellen" className="link-style project-link">&#9664; Fellesmodellen elæringsnettside</Link>
-                <span>Se annet prosjekt</span>
                 <Link to="/TEA" className="link-style project-link">TEA - The Everything App &#9654;</Link>
             </div>
         </div>

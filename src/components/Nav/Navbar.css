@@ -9,15 +9,17 @@
 .nav-links {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--dark-gray-dark);
+    background-color: var(--nav-bg);
     font-size: 1.2em;
     list-style: none;
     display: flex;
     margin: 0;
+
+    font-weight: bold;
 }
 
 .nav-links li {
-    color: var(--light-gray-light);
+    color: var(--text);
     cursor: pointer;
     line-height: 2;
     padding: 0.5em 1.2em;
@@ -25,8 +27,8 @@
 }
 
 .nav-links li:hover {
-    background-color: var(--dark-gray-medium);
-    color: var(--light-blue-light);
+    background-color: var(--bg);
+    color: var(--link-text-hover);
     text-decoration: underline;
 }
 
@@ -55,11 +57,11 @@
 }
 
 .bm-burger-bars, .bm-cross {
-    background: var(--light-blue-light);
+    background: var(--link-text-hover);
 }
 
 .bm-menu {
-    background: var(--dark-gray-dark);
+    background: var(--special-bg);
     padding: 2em;
 }
 
@@ -72,12 +74,13 @@
 }
 
 .bm-item:hover {
-    background-color: var(--dark-gray-medium);
-    color: var(--light-blue-light);
+    background-color: var(--bg);
+    color: var(--link-text-hover);
     text-decoration: underline;
     transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     border-radius: 0.5em;
 }
+  
 
 /* Hide nav links on mobile */
 @media (max-width: 750px) {

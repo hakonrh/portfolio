@@ -3,6 +3,9 @@ import './ProjectPage.css';
 import cover from "../../images/projects/Ruckus/splash.gif";
 import screenshots from "../../images/projects/Ruckus/screenshots.png";
 
+import ruby from "../../images/logos/ruby.png";
+import rmxp from "../../images/logos/rmxp.png";
+
 import { Link } from "react-router";
 
 const Ruckus = () => {
@@ -14,6 +17,26 @@ const Ruckus = () => {
                 Dette er et hobbyprosjekt jeg har jobbet på på egenhånd i flere år nå.
                 Spillet har vært gjennom mange iterasjoner, og er et helt spillbart Pokémon fanspill som foreløpig har et kort demo jeg slapp ut i februar 2025.
             </section>
+
+            <div className="tech-section">
+                <h3>Lagd med:</h3>
+                <div className="tech-list">
+                    <div className="tech-image">
+                        <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={ruby} alt="ruby" /></a>
+                        <span>
+                            Ruby
+                        </span>
+                    </div>
+                    <div className="tech-image">
+                        <a href="https://www.rpgmakerweb.com/products/rpg-maker-xp" target="_blank" rel="noreferrer" className="tech-link"><img className="tech-logo" src={rmxp} alt="RPG Maker XP" /></a>
+                        <span>
+                            RMXP
+                        </span>
+                    </div>
+
+                </div>
+                <br />
+            </div>
 
             <section className="project-text">
                 <h2>Nøkkelfunksjoner</h2>
@@ -38,7 +61,6 @@ const Ruckus = () => {
 
             <div className="project-navigation">
                 <Link to="/TEA" className="link-style project-link">&#9664; TEA - The Everything App</Link>
-                <span>Se annet prosjekt</span>
                 <Link to="/Fellesmodellen" className="link-style project-link">Fellesmodellen elæringsnettside &#9654;</Link>
             </div>
         </div>

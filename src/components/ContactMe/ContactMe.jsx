@@ -9,7 +9,7 @@ const ContactMe = () => {
                 <input type="text" name="name" placeholder="Ditt navn" required />
                 <input type="email" name="email" placeholder="Din Email" required />
                 <textarea name="message" rows="5" placeholder="Melding...!" required></textarea>
-                <button className="contact-button" type="submit">Send</button>
+                <button className="link-style" type="submit">Send</button>
             </form>
         </div>
     );

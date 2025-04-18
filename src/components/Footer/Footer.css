@@ -1,9 +1,9 @@
 .footer {
-    background-color: var(--dark-gray-dark);
+    background-color: var(--special-bg);
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 0.5em 0.5em 0 0;
+    border-radius: 4em 4em 0 0;
     justify-content: space-between;
     padding: 1em 0 1em 0;
 }
@@ -20,4 +20,11 @@
     justify-content: center;
     width: 100%;
     margin-top: 1em;
+}
+
+@media screen and (max-width: 750px) {
+    .contact-links {
+        flex-direction: column;
+        gap: 1em;
+    }
 }

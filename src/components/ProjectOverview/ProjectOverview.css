@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2em;
 }
 
 .project-wrapper {
@@ -12,15 +13,22 @@
 }
 
 .project-container {
-    background-color: var(--dark-gray-dark);
     display: flex;
+    flex-direction: column;
     max-width: 40%;
     justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
+    
     gap: 1em;
-    padding: 0 1.5em 0 1.5em;
+    padding: 0 1.5em 2em 1.5em;
     border-radius: 0.5em;
+
+    background-color: var(--special-bg);
+}
+
+.project-container .link-style {
+    margin-top: auto;  
 }
 
 .project-image {

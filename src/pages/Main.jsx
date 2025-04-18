@@ -11,7 +11,6 @@ function Main() {
             <Home />
             <br /><br />
             <Technologies />
-            <br /><br />
             <ProjectOverview />
             <br /><br />
             <AboutMe />

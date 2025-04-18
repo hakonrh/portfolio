@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { useLocation, useNavigate } from "react-router";
 import { slide as Menu } from "react-burger-menu";
 
-const Nav = () => {
+const Nav = ({ theme, setTheme }) => {
     const location = useLocation();
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +14,11 @@ const Nav = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    const toggleTheme = () => {
+        const newTheme = theme === "dark" ? "light" : "dark";
+        setTheme(newTheme);
+    };
 
     const scrollToSection = (id) => {
         setMenuOpen(false);
@@ -26,6 +31,12 @@ const Nav = () => {
             }, 100);
         }
     };
+
+    const ThemeButton = () => (
+        <button onClick={toggleTheme} className="theme-toggle">
+            {theme === "dark" ? "☀️ Lys" : "🌙 Mørk"}
+        </button>
+    );
 
     return (
         <nav className="navbar">
@@ -40,6 +51,7 @@ const Nav = () => {
                         <button className="menu-item" onClick={() => scrollToSection("projects")}>Prosjekter</button>
                         <button className="menu-item" onClick={() => scrollToSection("about")}>Om meg</button>
                         <button className="menu-item" onClick={() => scrollToSection("contact")}>Kontakt</button>
+                        <div className="menu-item"><ThemeButton /></div>
                     </Menu>
                 </div>
             ) : (
@@ -48,6 +60,7 @@ const Nav = () => {
                     <li onClick={() => scrollToSection("projects")}>Prosjekter</li>
                     <li onClick={() => scrollToSection("about")}>Om meg</li>
                     <li onClick={() => scrollToSection("contact")}>Kontakt</li>
+                    <li><ThemeButton /></li>
                 </ul>
             )}
         </nav>
