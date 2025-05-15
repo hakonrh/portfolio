@@ -12,9 +12,9 @@ const ProjectOverview = () => {
             <h2>Prosjekter</h2>
             <div className="project-wrapper">
                 <div className="project-container">
-                    <h3>Fellesmodellen elæringsnettside</h3>
+                    <h3>Fellesmodellen læringsplattform</h3>
                     <img src={Fellesmodellen} alt="The Super Assessor game" className="project-image" />
-                    <div className="project-description">Dette prosjektet er i utvikling av meg og 2 andre studenter som vår bacheloroppgave. Dette er en nettside med elæringsmodul for Fellesmodellen,
+                    <div className="project-description">Dette prosjektet jobbet jeg og 2 andre studenter med Helseinn til bacheloroppgaven vår. Det er en nettside med e-læringskurs for Fellesmodellen,
                         som er en enkel retningslinje for hvordan sykehus og kommune bør jobbe i samarbeidsprosjekt. 
                     </div>
                     <Link to="/Fellesmodellen" className="link-style">Les mer</Link>
@@ -23,7 +23,7 @@ const ProjectOverview = () => {
                 <div className="project-container">
                     <h3>The Super Assessor</h3>
                     <img src={SuperAssessor} alt="The Super Assessor game" className="project-image" />
-                    <div className="project-description">Dette prosjektet ble lagd som en del av eksamen i faget "Full-Stack webutvikling i Vår 2024. Vi var en gruppe på 3 stykker, og hadde i
+                    <div className="project-description">Dette prosjektet ble lagd som en del av eksamen i faget Full-Stack webutvikling i Vår 2024. Vi var en gruppe på 3 stykker, og hadde i
                         oppgave å lage en digital versjon av Super Assessor spillet, som skal hjelpe undervisere med å komme opp med nye vurderingsmetoder for studentene sine.
                     </div>
                     <Link to="/SuperAssessor" className="link-style">Les mer</Link>
@@ -33,7 +33,7 @@ const ProjectOverview = () => {
                     <h3>TEA - The Everything App</h3>
                     <img src={TEA} alt="TEA - The Everything App" className="project-image" />
                     <div className="project-description">Dette er en enkel Twitterklone jeg har laget på egenhånd som arbeidskrav i faget Cloud Technologies vår 2025. 
-                        Hovedfokuset på oppgaven ligger i utviklingen av backend i Python med FastAPI, og database med PostgreSQL. Siden er hostet via Render, med tre forskjellige "web services"
+                        Hovedfokuset på oppgaven ligger i utviklingen av backend i Python med FastAPI, og database med PostgreSQL. Siden er hostet via Render, med tre forskjellige «web services»
                         som kommuniserer med hverandre for en fungerende nettside.
                     </div>
                     <Link to="/TEA" className="link-style">Les mer</Link>

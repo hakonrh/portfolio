@@ -5,6 +5,7 @@ import cover from "../../images/projects/TEA/cover.png";
 import loggedOut from "../../images/projects/TEA/logged-out.png"
 import myPosts from "../../images/projects/TEA/my-posts.png"
 import accountList from "../../images/projects/TEA/account-list.png"
+import register from "../../images/projects/TEA/register.png"
 
 import css from "../../images/logos/css.png";
 import html from "../../images/logos/html.png";
@@ -79,14 +80,17 @@ const TEA = () => {
             </div>
 
             <section className="project-text">
-                <h2>Nøkkelfunksjoner</h2>
-                <ul>
-                    <li>Enkelt kontosystem satt opp med JWT</li>
-                    <li>Lag, rediger, og slett egne poster</li>
-                    <li>Se liste over alle eller egne poster.</li>
-                    <li>Se liste over alle registrerte kontoer</li>
-                    <li>Søk etter poster, kontoer, eller hashtags</li>
-                </ul>
+                <div>
+                    <h2>Nøkkelfunksjoner</h2>
+                    <ul>
+                        <li>Enkelt kontosystem satt opp med JWT</li>
+                        <li>Lag, rediger, og slett egne poster</li>
+                        <li>Se liste over alle eller egne poster.</li>
+                        <li>Se liste over alle registrerte kontoer</li>
+                        <li>Søk etter poster, kontoer, eller hashtags</li>
+                    </ul>
+                </div>
+                <img src={register} alt="the registration page" />
             </section>
 
             <section className="gallery-container">
